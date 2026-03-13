@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Reforma Lobero 19</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <p class="eyebrow">Plan Maestro DIY</p>
+      <h1>Reforma Calle Lobero 19</h1>
+      <p class="subtitle">
+        Guía móvil para comprar, ejecutar y seguir la reforma paso a paso desde el 17 de marzo de 2026.
+      </p>
+      <div class="hero-meta">
+        <span>📍 Montilla, Córdoba</span>
+        <span>🏠 3 plantas · 252 m² construidos</span>
+        <span>🛠️ Prioridad: detener filtraciones + moho</span>
+      </div>
+    </header>
+
+    <nav class="tabs" aria-label="Secciones">
+      <button class="tab active" data-tab="dashboard">Resumen</button>
+      <button class="tab" data-tab="fases">Fases</button>
+      <button class="tab" data-tab="compras">Compras por tienda</button>
+      <button class="tab" data-tab="guias">Guías en casa</button>
+      <button class="tab" data-tab="seguridad">Seguridad</button>
+    </nav>
+
+    <main>
+      <section id="dashboard" class="panel active">
+        <h2>Estado general</h2>
+        <div class="grid kpis">
+          <article class="card">
+            <h3>Fecha clave</h3>
+            <p class="big">17/03/2026</p>
+            <p>Entrega de llaves e inicio Fase 0.</p>
+          </article>
+          <article class="card">
+            <h3>Riesgo principal</h3>
+            <p class="big">Filtraciones activas</p>
+            <p>Azotea medianera + canaleta tejado salón.</p>
+          </article>
+          <article class="card">
+            <h3>Salud</h3>
+            <p class="big">Moho elevado</p>
+            <p>FFP3 + gafas herméticas + ventilación cruzada siempre.</p>
+          </article>
+        </div>
+
+        <article class="card">
+          <h3>Checklist rápido (primeras 2 semanas)</h3>
+          <ul class="checklist" id="quickChecklist"></ul>
+        </article>
+      </section>
+
+      <section id="fases" class="panel">
+        <h2>Plan por fases y calendario</h2>
+        <div id="timeline" class="stack"></div>
+      </section>
+
+      <section id="compras" class="panel">
+        <h2>Lista inteligente de compras</h2>
+        <p>
+          Filtra por tienda para usar la web mientras compras. La vista completa muestra duplicados para elegir el mejor precio.
+        </p>
+        <div class="filters card">
+          <label>
+            Tienda
+            <select id="storeFilter">
+              <option value="all">Todas</option>
+              <option value="Leroy Merlin">Leroy Merlin</option>
+              <option value="Obramat">Obramat</option>
+              <option value="Ferretería local">Ferretería local</option>
+            </select>
+          </label>
+          <label>
+            Categoría
+            <select id="categoryFilter">
+              <option value="all">Todas</option>
+              <option value="EPP">EPP</option>
+              <option value="Impermeabilización">Impermeabilización</option>
+              <option value="Limpieza y moho">Limpieza y moho</option>
+              <option value="Herramientas">Herramientas</option>
+              <option value="Humedad">Humedad</option>
+            </select>
+          </label>
+        </div>
+        <div id="shoppingList" class="grid"></div>
+      </section>
+
+      <section id="guias" class="panel">
+        <h2>Guías de trabajo en la casa</h2>
+        <div id="guides" class="stack"></div>
+      </section>
+
+      <section id="seguridad" class="panel">
+        <h2>Seguridad crítica (siempre visible)</h2>
+        <article class="card danger">
+          <h3>No negociable</h3>
+          <ul>
+            <li>No trabajar solo en tejado/azotea.</li>
+            <li>Para moho: mascarilla FFP3, gafas herméticas y guantes largos.</li>
+            <li>No mezclar lejía con otros productos.</li>
+            <li>No encender fuegos intensos hasta sustituir tubo PVC de chimenea.</li>
+            <li>Trabajos en altura exterior (fachada) → subcontratar.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <small>
+        Proyecto DIY de Rafael Ruiz Romero. Esta web resume el plan vivo de reforma y debe actualizarse tras cada avance.
+      </small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
